@@ -5,16 +5,100 @@
 
 /*-----------------------------------------------
 * ========Table Of Content========
-* Deafult CSS
-*
+* Base
+* Common
+* Main Wrapper
+* NavBar
+*Info-summary
+*Detailed-info
+*Table-info
+*Updates-info
+*Notifications
 *------------------------------------------------*/
+
+
+/*---------------------------
+*Base
+*----------------------------*/
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "Open Sans", sans-serif;   
+    box-sizing: border-box;
 }
 
 body{
     background-color: #eff3f5;
+    font-family: "Open Sans", sans-serif;
 }
+
+
+/*---------------------------
+*Common
+*----------------------------*/
+.card{
+    background-color: #fff;
+    border: 1px solid #d5dcec
+}
+
+/*---------------------------
+*Main Wrapper
+*----------------------------*/
+.wrapper{
+    margin: 0% 5%;
+}
+
+/*---------------------------
+*Navbar
+*----------------------------*/
+
+
+/*---------------------------
+*Info-Summary
+*----------------------------*/
+.info-summary-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100px;
+}
+
+.info-summary-container .card{
+    padding: 35px 25px;
+    width: 20%;
+}
+
+/*---------------------------
+*Detailed-info
+*----------------------------*/
+.detailed-info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    height: 200px;
+}
+.detailed-info-container .card{
+    width: 20%;
+}
+/*---------------------------
+*Table-info
+*----------------------------*/
+.table-info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*---------------------------
+*Updates-info
+*----------------------------*/
+.
+
+
+/*---------------------------
+*Notifications
+*----------------------------*/
