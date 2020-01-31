@@ -14,51 +14,269 @@
 </head>
 
 <body>
-    <main class="wrapper">
-        <!--Navbar starts here-->
-        <nav></nav>
-        <!--Navbar ends here-->
+    <!--Navbar starts here-->
+    <nav>
+        <div class="top-header">
+            <div class="logo">
+                <img src="/assets/images/logo.svg" alt="logo" title="logo">
+            </div>
+            <div class="right-top-header">
+                <div class="right-search-bar">
+                    <form action="#">
+                        <input type="search">
+                    </form>
+                </div>
+                <div class="right-notification">
+                    <i class="mdi mdi-bell-outline"></i>
+                    <span class="notification-counter">4</span>
+                </div>
+                <div class="profile-pic">
+                    <img src="/assets/images/face1.jpg" alt="profile-pic" title="profile-pic">
+                </div>
+            </div>
+        </div>
+        <div class="sub-header">
+            <ul>
+                <li><i class="link-icon mdi mdi-television"></i>DASHABOARD</li>
+                <li><i class="link-icon mdi mdi-apple-safari"></i>WIDGETS</li>
+                <li><i class="link-icon mdi mdi-atom"></i>ELEMENTS</li>
+                <li><i class="link-icon mdi mdi-flag-outline"></i>PAGES</li>
+                <li><i class="link-icon mdi mdi-android-studio"></i>FORMS</li>
+                <li><i class="link-icon mdi mdi-asterisk"></i>APPS</li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar ends here-->
 
+    <!--main content starts-->
+    <main class="wrapper">
         <!--Info-summary starts here-->
         <section class="info-summary-container">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <div class="card-body">
+                    <i class="mdi mdi-account-multiple-outline icon-lg"></i>
+                    <div class="card-content">
+                        <p>New Users</p>
+                        <p>65,650</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <i class="mdi mdi-checkbox-marked-circle-outline icon-lg"></i>
+                    <div class="card-content">
+                        <p>New Feedbacks</p>
+                        <p>32,604</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <i class="mdi mdi-trophy icon-lg"></i>
+                    <div class="card-content">
+                        <p>Employees</p>
+                        <p>17,583</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <i class="mdi mdi-target icon-lg"></i>
+                    <div class="card-content">
+                        <p>Total Sales</p>
+                        <p>61,119</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--Info-summary ends here-->
 
         <!--Detailed-info starts here-->
         <section class="detailed-info-container">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="profile-summary">
+                        <div class="profile-pic">
+                            <img src="/assets/images/face2.jpg" alt="" title="">
+                        </div>
+                        <div class="profile-basic-info">
+                            <h2>Maria Johnson</h2>
+                            <h5>Developer</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="profile-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem</p>
+                    </div>
+                    <div class="profile-follow">
+                        <button type="button">Follow</button>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card-footer">
+                    <div class="profile-analytics">
+                        <div class="posts">
+                            <p>5896</p>
+                            <p>Post</p>
+                        </div>
+                        <div class="followers">
+                            <p>1596</p>
+                            <p>Followers</p>
+                        </div>
+                        <div class="likes">
+                            <p>7896</p>
+                            <p>Likes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div>
+                        <p>Top Products</p>
+                        <p>598,486</p>
+                        <p>6.5% change from today</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Support Cases</p>
+                        <p>323,360</p>
+                        <p>2.5% change from yesterday</p>
+                    </div>
+                    <div>
+                        <!--graph place-->
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                       <p>6,256</p>
+                       <p>Totalsales</p> 
+                    </div>
+                    <div>
+                        <p>8569</p>
+                        <p>Open Campaign</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!--graph code required-->
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <p>5136</p>
+                        <p>Online Sales</p>
+                    </div>
+                    <div>
+                        <p>4596</p>
+                        <p>Stores Sales</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--Detailed-info ends here-->
 
         <!--Table-info starts here-->
         <section class="table-info-container">
-            <table></table>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Assignee</th>
+                    <th>Task Details</th>
+                    <th>PaymentMethod</th>
+                    <th>PaymentStatus</th>
+                    <th>Amount</th>
+                    <th>Tracking Number</th>
+                </tr>
+                <tr>
+                    <td>#320</td>
+                    <td>Mark C.Diaz </td>
+                    <td>Support of thteme</td>
+                    <td>Credit card</td>
+                    <td>Approved</td>
+                    <td>$12,245 </td>
+                    <td>JPBBN435893458</td>
+                </tr>
+                <tr>
+                    <td>#321</td>
+                    <td>Jose D</td>
+                    <td>Verify your email address !</td>
+                    <td>Internet banking</td>
+                    <td>Pending</td>
+                    <td>$12,245</td>
+                    <td>BDYBN435893325</td>
+                </tr>
+                <tr>
+                    <td>#322</td>
+                    <td>Philips T</td>
+                    <td>Item support message send</td>
+                    <td>Credit card</td>
+                    <td>Approved</td>
+                    <td>$12,245</td>
+                    <td>JSNTN435884258</td>
+                </tr>
+                <tr>
+                    <td>#323</td>
+                    <td>Luke Pixel</td>
+                    <td>New submission on website</td>
+                    <td>Cash on delivery</td>
+                    <td>Rejected</td>
+                    <td>$12,245</td>
+                    <td>JPABT435893678</td>
+                </tr>
+            </table>
         </section>
         <!--Table-info ends here-->
 
         <!--Updates-info starts here-->
         <section class="updates-info-container">
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <div class="card-header">
+                    <p>The Current Chart</p>
+                </div>
+                <div class="card-body">
+                    <!--graph code required-->
+                </div>
+                <div class="card-footer">
+                    <p>Project Status</p>
+                    <p>76,533</p><sub>PCS</sub>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Updates
+                </div>
+                <div class="card-body">
+                    <!--timeline code required-->
+                </div>
+            </div>
         </section>
         <!--Updates-info ends here-->
 
         <!--Notifications starts here-->
         <section class="notifications-container">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <div class="card-header">
+                    <p>Manage Tickets</p>
+                </div>
+                <div class="card-body">
+                    <div class="profile-pic"></div>
+                    <div class="message">
+                        
+                    </div>
+                    <div class="action">
+                        <button type="button">Manage</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">sdfds</div>
+            <div class="card">dsfds</div>
         </section>
         <!--Notifications ends here-->
 
     </main>
-    <!-- <i class="link-icon mdi mdi-atom"></i> -->
+    <!--main content ends-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
     <script src="./assets/js/script.js" defer></script>
 </body>
