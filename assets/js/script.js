@@ -57,6 +57,48 @@
           options: options
         });
       }
+      if ($('#sales-chart').length) {
+        Morris.Line({
+          element: 'sales-chart',
+          lineColors: ['rgba(70, 77, 228, 0.8)', 'rgba(217, 225 ,253, 1)'],
+          data: [{
+              y: '2006',
+              a: 50,
+              b: 0
+            },
+            {
+              y: '2007',
+              a: 75,
+              b: 78
+            },
+            {
+              y: '2008',
+              a: 30,
+              b: 12
+            },
+            {
+              y: '2009',
+              a: 35,
+              b: 50
+            },
+            {
+              y: '2010',
+              a: 70,
+              b: 100
+            },
+            {
+              y: '2011',
+              a: 78,
+              b: 65
+            }
+          ],
+          grid: false,
+          xkey: 'y',
+          ykeys: ['a', 'b'],
+          labels: ['Series A', 'Series B'],
+          hideHover: "always"
+        });
+      }
     });
   })(jQuery);
   
