@@ -131,22 +131,21 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="graph-card">
                 <div class="card-body">
                     <div>
-                        <p>Top Products</p>
-                        <p>598,486</p>
+                        <h5 class="grey-text heading-font-1">Top Products</h5>
+                        <h1 class="heading-number-font">598,486</h1>
                         <p>6.5% change from today</p>
                     </div>
-                    <hr>
-                    <div>
-                        <p>Support Cases</p>
-                        <p>323,360</p>
+                    <div class="mt-top-4 border-top">
+                        <h5 class="mt-top-4 grey-text heading-font-1">Support Cases</h5>
+                        <h1 class="heading-number-font">323,360</h1>
                         <p>2.5% change from yesterday</p>
                     </div>
-                    <div>
-                        <!--graph place-->
-                    </div>
+                </div>
+                <div>
+                    <canvas id="product-chart-graph" width="352px" height="200px"></canvas>
                 </div>
             </div>
             <div class="card">
@@ -295,6 +294,7 @@
     <!--main content ends-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
     <script src="./assets/js/script.js" defer></script>
 </body>
 

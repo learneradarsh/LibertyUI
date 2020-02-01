@@ -96,6 +96,16 @@ h1,h2,h3,h4,h5,h5,h6{
 .border-top{
     border-top: 1px solid #d5dcec;
 }
+.grey-text{
+    color: #636363;
+}
+.heading-font-1{
+    font-size: 1rem;
+}
+.heading-number-font{
+    font-size: 1.56rem;
+    color: #223C61;
+}
 /*---------------------------
 *Main Wrapper
 *----------------------------*/
@@ -287,7 +297,7 @@ h1,h2,h3,h4,h5,h5,h6{
     font-weight: 400;
     font-size: 0.8rem;
 }
-.detailed-info-container .card .card-body{
+.detailed-info-container .card-body{
     font-weight: 400;
     font-size: 0.8rem;
 }
@@ -307,6 +317,14 @@ h1,h2,h3,h4,h5,h5,h6{
     font-size: 0.8rem;
     font-weight: 400;
 }
+.graph-card{
+    background-color: #fff;
+    border: 1px solid #d5dcec
+}
+.graph-card .card-body{
+    padding: 10.2%;
+}
+
 /*---------------------------
 *Table-info
 *----------------------------*/
