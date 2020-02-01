@@ -426,7 +426,45 @@ thead td{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 4%;
 }
 .notifications-container .card{
-    height: 100px;
+    height: auto;
+    padding: 25px 35px;
+}
+
+.notifications-container .card-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.notifications-container .profile-pic img{
+    display: inline-block;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 37px;
+    height: 37px;
+}
+
+.notifications-container .message{
+    font-size: 0.8rem;
+}
+.notifications-container .description{
+    color: #a8abad;
+    font-weight: 600;
+}
+.notifications-container .status{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    line-height: 3;
+}
+
+.notifications-container .status div{
+    width: 40%;
+    color: #a8abad;
 }
