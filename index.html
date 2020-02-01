@@ -261,53 +261,55 @@
         <!--Detailed-info ends here -->
 
         <!--Table-info starts here-->
-        <section class="table-info-container">
+         <section class="table-info-container">
             <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Assignee</th>
-                    <th>Task Details</th>
-                    <th>PaymentMethod</th>
-                    <th>PaymentStatus</th>
-                    <th>Amount</th>
-                    <th>Tracking Number</th>
-                </tr>
-                <tr>
-                    <td>#320</td>
-                    <td>Mark C.Diaz </td>
-                    <td>Support of thteme</td>
-                    <td>Credit card</td>
-                    <td>Approved</td>
-                    <td>$12,245 </td>
-                    <td>JPBBN435893458</td>
-                </tr>
-                <tr>
-                    <td>#321</td>
-                    <td>Jose D</td>
-                    <td>Verify your email address !</td>
-                    <td>Internet banking</td>
-                    <td>Pending</td>
-                    <td>$12,245</td>
-                    <td>BDYBN435893325</td>
-                </tr>
-                <tr>
-                    <td>#322</td>
-                    <td>Philips T</td>
-                    <td>Item support message send</td>
-                    <td>Credit card</td>
-                    <td>Approved</td>
-                    <td>$12,245</td>
-                    <td>JSNTN435884258</td>
-                </tr>
-                <tr>
-                    <td>#323</td>
-                    <td>Luke Pixel</td>
-                    <td>New submission on website</td>
-                    <td>Cash on delivery</td>
-                    <td>Rejected</td>
-                    <td>$12,245</td>
-                    <td>JPABT435893678</td>
-                </tr>
+                <thead>
+                    <td>ID</td>
+                    <td>Assignee</td>
+                    <td>Task Details</td>
+                    <td>PaymentMethod</td>
+                    <td>PaymentStatus</td>
+                    <td>Amount</td>
+                    <td>Tracking Number</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#320</td>
+                        <td>Mark C.Diaz </td>
+                        <td>Support of thteme</td>
+                        <td>Credit card</td>
+                        <td class="tag approved-tag">Approved</td>
+                        <td>$12,245 </td>
+                        <td>JPBBN435893458</td>
+                    </tr>
+                    <tr>
+                        <td>#321</td>
+                        <td>Jose D</td>
+                        <td>Verify your email address !</td>
+                        <td>Internet banking</td>
+                        <td class="tag pending-tag">Pending</td>
+                        <td>$12,245</td>
+                        <td>BDYBN435893325</td>
+                    </tr>
+                    <tr>
+                        <td>#322</td>
+                        <td>Philips T</td>
+                        <td>Item support message send</td>
+                        <td>Credit card</td>
+                        <td class="tag approved-tag">Approved</td>
+                        <td>$12,245</td>
+                        <td>JSNTN435884258</td>
+                    </tr>
+                    <tr>
+                        <td>#323</td>
+                        <td>Luke Pixel</td>
+                        <td>New submission on website</td>
+                        <td>Cash on delivery</td>
+                        <td class="tag rejected-tag">Rejected</td>
+                        <td>$12,245</td>
+                        <td>JPABT435893678</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
         <!--Table-info ends here-->
@@ -316,14 +318,16 @@
         <section class="updates-info-container">
             <div class="card">
                 <div class="card-header">
-                    <p>The Current Chart</p>
+                    <p class="grey-text heading-font-1 font-w-600">The Current Chart</p>
                 </div>
                 <div class="card-body">
-                    <!--graph code required-->
+                    <!--graph starts-->
+                    <canvas id="current-chart" height="164" width="493" class="chartjs-render-monitor"></canvas>
+                    <!--graph ends-->
                 </div>
-                <div class="card-footer">
-                    <p>Project Status</p>
-                    <p>76,533</p><sub>PCS</sub>
+                <div class="card-footer mt-top-4 border-top">
+                    <p class="mt-top-4 grey-small-text font-w-600">Project Status</p>
+                    <p class="heading-number-font-2 font-w-600">76,533&nbsp;<span class="grey-small-text font-w-600">PCS</span></p>
                 </div>
             </div>
             <div class="card">
