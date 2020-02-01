@@ -53,6 +53,14 @@ h1,h2,h3,h4,h5,h5,h6{
     font-weight: 600;
 }
 
+tbody{
+    background-color: #fff;
+}
+
+thead td{
+   color: #223C61; 
+}
+
 /*---------------------------
 *Common
 *----------------------------*/
@@ -108,6 +116,10 @@ h1,h2,h3,h4,h5,h5,h6{
 }
 .heading-number-font{
     font-size: 1.56rem;
+    color: #223C61;
+}
+.heading-number-font-2{
+    font-size: 3.125rem;
     color: #223C61;
 }
 .grey-small-text{
@@ -331,7 +343,7 @@ h1,h2,h3,h4,h5,h5,h6{
 }
 .graph-card{
     background-color: #fff;
-    border: 1px solid #d5dcec
+    border: 1px solid #d5dcec;
 }
 .graph-card .card-body{
     padding: 10.2%;
@@ -346,13 +358,41 @@ h1,h2,h3,h4,h5,h5,h6{
 /*---------------------------
 *Table-info
 *----------------------------*/
-.table-info-container{
+/* .table-info-container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
+.table-info-container table{
+    display: table;
+}
+.table-info-container thead tr{
+    font-weight: 600;
+}
+.table-info-container tbody tr{
+    color: #a8abad;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.tag{
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.3rem;
+    color: #fff;
+    text-align: center;
+}
+.approved-tag{
+    border: 1px solid #4CCEAC;
+    background-color: #4CCEAC;
+}
+.pending-tag{
+    border: 1px solid #FF6F59;
+    background-color: #FF6F59;
+}
+.rejected-tag{
+    border:1px solid #DB504A;
+    background-color: #DB504A;
+}
 /*---------------------------
 *Updates-info
 *----------------------------*/
@@ -361,12 +401,22 @@ h1,h2,h3,h4,h5,h5,h6{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 200px;
-    justify-content: space-evenly;
+    height: auto;
+    justify-content: space-between;
 }
 
 .updates-info-container .card{
-    width: 50%;
+    width: 49%;
+}
+
+.updates-info-container .card-header{
+    padding: 35px 25px 15px 25px;
+}
+.updates-info-container .card-body{
+    padding: 0px 25px;
+}
+.updates-info-container .card-footer{
+    padding: 0px 25px 25px;
 }
 
 /*---------------------------
