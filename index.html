@@ -150,26 +150,110 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <div>
-                        <p>6,256</p>
-                        <p>Totalsales</p>
-                    </div>
-                    <div>
-                        <p>8569</p>
-                        <p>Open Campaign</p>
+                    <div class="flex-wrap center">
+                        <div>
+                            <p>6,256</p>
+                            <p class="grey-small-text">Totalsales</p>
+                        </div>
+                        <div>
+                            <p>8569</p>
+                            <p class="grey-small-text">Open Campaign</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card-body">
-                    <!--graph code required-->
-                </div>
-                <div class="card-footer">
-                    <div>
-                        <p>5136</p>
-                        <p>Online Sales</p>
+                <div class="card-body mt-top-4">
+                    <!--graph starts-->
+                    <div id="sales-chart"
+                        style="height: 250px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <svg height="250"
+                            version="1.1" width="303" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            style="overflow: hidden; position: relative; left: -0.46875px;">
+                            <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.4</desc>
+                            <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="34.859375" y="211"
+                                text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                font-weight="normal">
+                                <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
+                            </text><text x="34.859375" y="164.5" text-anchor="end" font-family="sans-serif" font-size="12px"
+                                stroke="none" fill="#888888"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                font-weight="normal">
+                                <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">25</tspan>
+                            </text><text x="34.859375" y="118" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none"
+                                fill="#888888"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                font-weight="normal">
+                                <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan>
+                            </text><text x="34.859375" y="71.5" text-anchor="end" font-family="sans-serif" font-size="12px"
+                                stroke="none" fill="#888888"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                font-weight="normal">
+                                <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">75</tspan>
+                            </text><text x="34.859375" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none"
+                                fill="#888888"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                font-weight="normal">
+                                <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan>
+                            </text><text x="277.984" y="223.5" text-anchor="middle" font-family="sans-serif" font-size="12px"
+                                stroke="none" fill="#888888"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                font-weight="normal" transform="matrix(1,0,0,1,0,7)">
+                                <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan>
+                            </text><text x="185.78467018072288" y="223.5" text-anchor="middle" font-family="sans-serif" font-size="12px"
+                                stroke="none" fill="#888888"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                font-weight="normal" transform="matrix(1,0,0,1,0,7)">
+                                <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2009</tspan>
+                            </text><text x="93.45903990963855" y="223.5" text-anchor="middle" font-family="sans-serif" font-size="12px"
+                                stroke="none" fill="#888888"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                font-weight="normal" transform="matrix(1,0,0,1,0,7)">
+                                <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2007</tspan>
+                            </text>
+                            <path fill="none" stroke="#d9e1fd"
+                                d="M47.359375,211C58.88429122740963,174.73,81.93412368222891,68.70999999999998,93.45903990963855,65.91999999999999C104.98395613704818,63.12999999999999,128.03378859186745,182.17890560875514,139.5587048192771,188.68C151.11519615963854,195.19890560875513,174.22817884036144,138.48798905608754,185.78467018072288,118C197.30958640813253,97.56798905608755,220.35941886295177,28.4875,231.88433509036142,25C243.40925131777107,21.5125,266.45908377259036,73.82499999999999,277.984,90.1"
+                                stroke-opacity="1" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                            <path fill="none" stroke="#464de4"
+                                d="M47.359375,118C58.88429122740963,106.375,81.93412368222891,66.85,93.45903990963855,71.5C104.98395613704818,76.15,128.03378859186745,145.9127222982216,139.5587048192771,155.2C151.11519615963854,164.5127222982216,174.22817884036144,155.2127222982216,185.78467018072288,145.89999999999998C197.30958640813253,136.6127222982216,220.35941886295177,90.79749999999999,231.88433509036142,80.79999999999998C243.40925131777107,70.80249999999998,266.45908377259036,69.63999999999999,277.984,65.91999999999999"
+                                stroke-opacity="0.8" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                            <circle cx="47.359375" cy="211" r="4" fill="#d9e1fd" stroke="#ffffff" fill-opacity="1" stroke-width="1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="93.45903990963855" cy="65.91999999999999" r="4" fill="#d9e1fd" stroke="#ffffff" fill-opacity="1"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="139.5587048192771" cy="188.68" r="4" fill="#d9e1fd" stroke="#ffffff" fill-opacity="1"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="185.78467018072288" cy="118" r="4" fill="#d9e1fd" stroke="#ffffff" fill-opacity="1"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="231.88433509036142" cy="25" r="4" fill="#d9e1fd" stroke="#ffffff" fill-opacity="1"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="277.984" cy="90.1" r="4" fill="#d9e1fd" stroke="#ffffff" fill-opacity="1" stroke-width="1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="47.359375" cy="118" r="4" fill="#464de4" stroke="#ffffff" fill-opacity="0.8" stroke-width="1"
+                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="93.45903990963855" cy="71.5" r="4" fill="#464de4" stroke="#ffffff" fill-opacity="0.8"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="139.5587048192771" cy="155.2" r="4" fill="#464de4" stroke="#ffffff" fill-opacity="0.8"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="185.78467018072288" cy="145.89999999999998" r="4" fill="#464de4" stroke="#ffffff"
+                                fill-opacity="0.8" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="231.88433509036142" cy="80.79999999999998" r="4" fill="#464de4" stroke="#ffffff"
+                                fill-opacity="0.8" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                            <circle cx="277.984" cy="65.91999999999999" r="4" fill="#464de4" stroke="#ffffff" fill-opacity="0.8"
+                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                        </svg>
                     </div>
-                    <div>
-                        <p>4596</p>
-                        <p>Stores Sales</p>
+                    <!--graph ends-->
+                </div>
+                <div class="card-footer center mt-top-4">
+                    <div class="flex-wrap">
+                        <div>
+                            <p>5136</p>
+                            <p class="grey-small-text">Online Sales</p>
+                        </div>
+                        <div>
+                            <p>4596</p>
+                            <p class="grey-small-text">Stores Sales</p>
+                        </div>
                     </div>
                 </div>
             </div>
