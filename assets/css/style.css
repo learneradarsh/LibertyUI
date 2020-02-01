@@ -48,8 +48,9 @@ section{
     margin-top: 2%;
 }
 
-h1,h2,h3,h4,h5,h5{
+h1,h2,h3,h4,h5,h5,h6{
     font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 
 /*---------------------------
@@ -60,24 +61,40 @@ h1,h2,h3,h4,h5,h5{
     border: 1px solid #d5dcec
 }
 
-.card-body{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.profile-pic{
+/* .profile-pic{
     display: inline-block;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
+} */
 .dropdown::after {
     font: normal normal normal 24px/1 "Material Design Icons";
     content: "\F35D";
     font-size: inherit;
     margin-left: 4px;
+}
+
+.mt-top-4{
+    margin-top: 1.5rem;
+}
+
+.center{
+    text-align: center;
+}
+.btn-primary{
+    color: #fff;
+    font-size: 0.875rem;
+    background-color: #464de4;
+    border-color: #464de4;
+    padding: 0.5rem 0.81rem;
+    border-radius: 0.1875rem;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+.border-top{
+    border-top: 1px solid #d5dcec;
 }
 /*---------------------------
 *Main Wrapper
@@ -219,6 +236,9 @@ h1,h2,h3,h4,h5,h5{
 
 .info-summary-container .card-body{
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .info-summary-container .card-body p{
@@ -242,7 +262,50 @@ h1,h2,h3,h4,h5,h5{
     height: auto;
 }
 .detailed-info-container .card{
-    width: 30%;
+    width: 32%;
+    padding: 3%;
+}
+.detailed-info-container .card .card-header{
+    text-align: center;
+}
+.detailed-info-container .profile-pic img{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.detailed-info-container .card .profile-basic-info h4{
+    font-size: 1.13rem;
+    color: #354168;
+    margin: 4px 0px;
+}
+.detailed-info-container .card .profile-basic-info h5{
+    color: #a8abad;
+    margin: 4px 0px;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.detailed-info-container .card .card-body{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.detailed-info-container .card-footer .profile-analytics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 12%;
+}
+
+.detailed-info-container .card-footer .profile-analytics div p:nth-child(1){
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+.detailed-info-container .card-footer .profile-analytics div p:nth-child(2){
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 /*---------------------------
 *Table-info
