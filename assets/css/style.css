@@ -154,7 +154,9 @@ thead td{
 }
 .top-header .logo img{
     max-width: 100%;
-    width: 40%;
+    height: 28px;
+    margin: auto;
+    vertical-align: middle;
 }
 .top-header .right-top-header{
     flex-grow: 8;
