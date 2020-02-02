@@ -109,7 +109,10 @@ thead td{
     border-top: 1px solid #d5dcec;
 }
 .grey-text{
-    color: #636363;
+    color: #354168;
+}
+.light-grey-text{
+    color: #a8abad;
 }
 .heading-font-1{
     font-size: 1rem;
@@ -434,18 +437,36 @@ thead td{
     position: relative;
     list-style-type: none;
 }
-.timeline::before{
+.timeline li{
+    position: relative;
+    line-height: 1.7;
+}
+.timeline li::before{
     content: "";
     position: absolute;
     border-radius: 100%;
-    width: 15px;
-    height: 15px;
+    width: 5px;
+    height: 5px;
     left: -30px;
     top: 15px;
     border: 4px solid #464de4;
     margin-right: 15px;
     z-index: 2;
     background: #fff;
+}
+.timeline li>h4{
+    font-size: 0.9375rem;
+}
+.timeline li>p{
+    font-size: 0.8rem;
+}
+.timeline li::after{
+    content: "";
+    border: 1px solid #d5dcec;
+    position: absolute;
+    top: 25px;
+    bottom: -39px;
+    left: -25px;
 }
 /*---------------------------
 *Notifications
