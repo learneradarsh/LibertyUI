@@ -14,6 +14,7 @@
 * Table-info
 * Updates-info
 * Notifications
+* Media Query
 *------------------------------------------------*/
 
 
@@ -27,11 +28,14 @@
     box-sizing: border-box;
     outline: none;
 }
-
+html{
+    width: 100%;
+    font-size: 100%;
+}
 body{
     background-color: #eff3f5;
     font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
+    width: 100%;
 }
 
 nav{
@@ -69,13 +73,6 @@ thead td{
     border: 1px solid #d5dcec
 }
 
-/* .profile-pic{
-    display: inline-block;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-} */
 .dropdown::after {
     font: normal normal normal 24px/1 "Material Design Icons";
     content: "\F35D";
@@ -348,6 +345,7 @@ thead td{
     font-weight: 400;
 }
 .graph-card{
+    width: 32%;
     background-color: #fff;
     border: 1px solid #d5dcec;
 }
@@ -364,11 +362,6 @@ thead td{
 /*---------------------------
 *Table-info
 *----------------------------*/
-/* .table-info-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
 
 .responsive-table{
     width: 100%;
@@ -520,4 +513,42 @@ thead td{
 .notifications-container .status div{
     width: 40%;
     color: #a8abad;
+}
+
+/**
+* Media Queries
+**/
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .table-info-container{
+        overflow-x: scroll;
+    }    
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    
+    
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+   
+    
 }
