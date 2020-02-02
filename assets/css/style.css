@@ -239,10 +239,12 @@ thead td{
     font-weight: 600;
     font-size: 12px;
 }
+
 .sub-header ul > li > a{
     text-decoration: none;
     color: #223C61;
 }
+
 .nav-active{
     background: linear-gradient(30deg, #464de4, #814eff);
     color: #fff;
