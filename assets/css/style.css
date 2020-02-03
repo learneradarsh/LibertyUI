@@ -50,6 +50,10 @@ li,a,button{
     text-decoration: none;
 }
 
+p{
+    overflow-wrap:break-word;
+}
+
 section{
     margin-top: 2%;
 }
@@ -168,6 +172,9 @@ thead td{
 .top-header .right-top-header div{
     margin-left: 20px;
 }
+.right-top-header .profile-pic{
+    position: relative;
+}
 .right-top-header .profile-pic img{
   display: inline-block;
   width: 37px;
@@ -184,6 +191,8 @@ thead td{
     font-size: inherit;
     text-rendering: auto;
     line-height: inherit;
+    position: absolute;
+    top: 12px;
 }
 .right-top-header .right-search-bar{
     border-radius: 50px 50px 50px 50px;
@@ -251,6 +260,39 @@ thead td{
 .nav-active{
     background: linear-gradient(30deg, #464de4, #814eff);
     color: #fff;
+}
+.mobile-menu-cta{
+    display: none;
+    position: relative;
+}
+.mobile-menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100px;
+    padding: 2%;
+    background-color: #fff;
+    z-index: 1;
+    border: 1px solid #d5dcec;
+
+}
+.mobile-menu ul>li{
+    list-style: none;
+    padding: 4%;
+    border-bottom: 1px solid #d5dcec;
+}
+.mobile-menu li>a>i{
+    margin-right: 2%;
+    color: #464de4;
+}
+.mobile-menu li>a{
+    text-decoration: none;
+    color: #223C61;
+    font-weight: 600;
 }
 /*---------------------------
 *Info-Summary
@@ -533,12 +575,13 @@ thead td{
 
 @media (min-width: 320px) and (max-width: 767px) {
     
-    /* nav{
-        
-    } */
     .top-header{
         margin: 0%;
         padding: 4%;
+    }
+    .mobile-menu-cta{
+        display: block;
+        cursor: pointer;
     }
     .sub-header{
         display: none;
@@ -602,6 +645,10 @@ thead td{
     .notifications-container .status div{
         width: 100%;
     }
+
+    .mobile-menu-cta:hover .mobile-menu{
+        display: block;
+    }
     
 }
 
@@ -624,6 +671,10 @@ thead td{
    .top-header{
         margin: 2%;
    }
+   .mobile-menu-cta{
+    display: block;
+    cursor: pointer;
+    }
    .sub-header{
        display: none;
    }
@@ -647,6 +698,9 @@ thead td{
     }
     .updates-info-container .card:nth-child(2) .card-body{
         padding-bottom: 15%;
+    }
+    .mobile-menu-cta:hover .mobile-menu{
+        display: block;
     }
 }
 
