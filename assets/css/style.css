@@ -524,11 +524,50 @@ thead td{
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    nav{
+        display: none;
+    }
+    section{
+        margin-top: 8%;
+    }
+    .wrapper{
+        margin: 0% 4%;
+        overflow-x: hidden;
+    }
+    .info-summary-container .card{
+        width: 50%;
+    }
+
+    .info-summary-container .card i {
+        width: 50%;
+    }
+
+    .info-summary-container .card-body{
+        flex-direction: column;
+        text-align: center;   
+    }
+    
+    .detailed-info-container .card{
+        width: 100%;
+    }
+    .detailed-info-container .graph-card{
+        width: 100%;
+    }
+    .graph-card{
+        margin: 8% 0%;
+    }
     .table-info-container{
         overflow-x: scroll;
-    }    
+    }  
+    .updates-info-container .card{
+        width: 100%;
+    }
+    .updates-info-container .card:nth-child(1){
+        margin-bottom: 8%;
+    }
+    
 }
 
 /* 
