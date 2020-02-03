@@ -699,6 +699,20 @@ thead td{
     .updates-info-container .card:nth-child(2) .card-body{
         padding-bottom: 15%;
     }
+    .mobile-menu {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        padding: 2%;
+        background-color: #fff;
+        z-index: 1;
+        border: 1px solid #d5dcec;
+    }
     .mobile-menu-cta:hover .mobile-menu{
         display: block;
     }
