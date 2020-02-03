@@ -536,8 +536,17 @@ thead td{
         margin: 0% 4%;
         overflow-x: hidden;
     }
+    
     .info-summary-container .card{
         width: 50%;
+    }
+
+    .info-summary-container .card:nth-last-child(3){
+        border-right: 1px solid #d5dcec ;
+    }
+
+    .info-summary-container .card:nth-child(3),.info-summary-container .card:nth-child(4){
+        border-top: none;
     }
 
     .info-summary-container .card i {
@@ -569,6 +578,12 @@ thead td{
     }
     .updates-info-container .card:nth-child(2) .card-body{
         padding-bottom: 25%;
+    }
+    .notifications-container .status{
+        flex-direction: column;
+    }
+    .notifications-container .status div{
+        width: 100%;
     }
     
 }
