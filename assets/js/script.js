@@ -96,7 +96,7 @@
           xkey: 'y',
           ykeys: ['a', 'b'],
           labels: ['Series A', 'Series B'],
-          hideHover: "always"
+          hideHover: "no"
         });
       }
       if ($("#current-chart").length) {

@@ -203,6 +203,9 @@ thead td{
 .right-top-header .right-notification{
     font-size: 1.25rem;
 }
+.right-notification{
+    position: relative;
+}
 .right-notification .notification-counter{
     background-color: #FF6F59;
     border-radius: 50%;
@@ -212,8 +215,8 @@ thead td{
     border: none;
     padding: 2px;
     position: absolute;
-    top: 18px;
-    left: 75.3%;
+    bottom: 15px;
+    left: 8px;
     width: 20px;
     text-align: center;
 }
@@ -233,9 +236,9 @@ thead td{
 
 .sub-header ul > li{
     display: inline-block;
-    padding: 12px 20px;   
+    padding: 1% 0%;   
     text-align: center;
-    width: 16.35%;
+    width: 15.35%;
     font-weight: 600;
     font-size: 12px;
 }
@@ -364,7 +367,9 @@ thead td{
 /*---------------------------
 *Table-info
 *----------------------------*/
-
+.table-info-container{
+    overflow-x: auto;
+}
 .responsive-table{
     width: 100%;
     overflow-x: auto;
@@ -622,10 +627,6 @@ thead td{
    .sub-header{
        display: none;
    }
-   .right-notification .notification-counter {
-    top: 2%;
-    left: 86.3%;
-    }
    .wrapper{
        margin: 2%;
        overflow-x: hidden;
@@ -662,10 +663,6 @@ thead td{
     }
     .sub-header{
         margin: 1% 5%;
-    }
-    .right-notification .notification-counter{
-        top: 2%;
-        left: 89.4%;
     }
     .table-info-container{
         overflow-x: scroll;
