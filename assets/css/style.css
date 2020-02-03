@@ -358,7 +358,6 @@ thead td{
     flex-direction: row;
     justify-content: space-around;
 }
-
 /*---------------------------
 *Table-info
 *----------------------------*/
@@ -567,6 +566,9 @@ thead td{
     .updates-info-container .card:nth-child(1){
         margin-bottom: 8%;
     }
+    .updates-info-container .card:nth-child(2) .card-body{
+        padding-bottom: 25%;
+    }
     
 }
 
@@ -575,11 +577,9 @@ thead td{
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-  
+/* @media (min-width: 481px) and (max-width: 767px) {    
     
-    
-}
+} */
 
 /* 
   ##Device = Tablets, Ipads (landscape)
@@ -588,6 +588,28 @@ thead td{
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-   
-    
+   nav{
+       display: none;
+   }
+   .wrapper{
+       margin: 2%;
+       overflow-x: hidden;
+   }
+   .table-info-container{
+       overflow-x: scroll;
+   }
+   .info-summary-container .card i {
+    width: 50%;
+    }
+
+    .info-summary-container .card-body{
+        flex-direction: column;
+        text-align: center;   
+    }
+    .detailed-info-container #product-chart-graph{
+       margin-top: 32.1%;
+    }
+    .updates-info-container .card:nth-child(2) .card-body{
+        padding-bottom: 15%;
+    }
 }
