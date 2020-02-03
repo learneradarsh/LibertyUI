@@ -533,8 +533,12 @@ thead td{
     } */
     .top-header{
         margin: 0%;
+        padding: 4%;
     }
     .sub-header{
+        display: none;
+    }
+    .right-top-header form{
         display: none;
     }
     section{
@@ -649,9 +653,21 @@ thead td{
   ##Device = iPad Pro
   ##Screen = B/w 1024px to 1033px
 */
-@media (min-width: 1024px) and (max-width: 1033px){
+@media (min-width: 1024px) and (max-width: 1440px){
+    .wrapper {
+        margin: 0% 5%;
+    }
+    .top-header{
+        margin: 0% 5%;
+    }
+    .sub-header{
+        margin: 1% 5%;
+    }
     .right-notification .notification-counter{
         top: 2%;
         left: 89.4%;
+    }
+    .table-info-container{
+        overflow-x: scroll;
     }
 }
