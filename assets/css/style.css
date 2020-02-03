@@ -14,7 +14,8 @@
 * Table-info
 * Updates-info
 * Notifications
-* Media Query
+* Media Query - B/w 320px to 767px
+* Media Query - B/w 768px to 1024px
 *------------------------------------------------*/
 
 
@@ -520,7 +521,7 @@ thead td{
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
+  ##Screen = B/w 320px to 767px
 */
 
 @media (min-width: 320px) and (max-width: 767px) {
