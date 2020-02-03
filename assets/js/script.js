@@ -57,9 +57,9 @@
           options: options
         });
       }
-      if ($('#morris-line-example').length) {
+      if ($('#sales-chart').length) {
         Morris.Line({
-          element: 'morris-line-example',
+          element: 'sales-chart',
           lineColors: ['rgba(70, 77, 228, 0.8)', 'rgba(217, 225 ,253, 1)'],
           data: [{
               y: '2006',
