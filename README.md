@@ -1,6 +1,6 @@
 # LibertyUI
-
+Web Page Layout using HTML,CSS, and Chart.js
 
 Resources Links:
-https://cdn.materialdesignicons.com/4.8.95/
-http://smacss.com/
+a) https://cdn.materialdesignicons.com/4.8.95/
+b) http://smacss.com/
