@@ -252,21 +252,28 @@ thead td{
     font-size: 12px;
 }
 
+.nav-active{
+    background: linear-gradient(30deg, #464de4, #814eff);
+}
+.sub-header li:nth-child(1) i{
+    color: #fff;
+}
+.sub-header li:nth-child(1) a{
+    color: #fff;
+}
 .sub-header ul > li > a{
     text-decoration: none;
     color: #223C61;
 }
 
-.nav-active{
-    background: linear-gradient(30deg, #464de4, #814eff);
-    color: #fff;
-}
+
 .mobile-menu-cta{
     display: none;
     position: relative;
 }
 .mobile-menu{
     display: none;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -274,7 +281,7 @@ thead td{
     right: 0;
     bottom: 0;
     left: 100px;
-    padding: 2%;
+    padding: 0%;
     background-color: #fff;
     z-index: 1;
     border: 1px solid #d5dcec;
@@ -649,6 +656,9 @@ thead td{
     .mobile-menu-cta:hover .mobile-menu{
         display: block;
     }
+    .mobile-menu{
+        left: 35%;
+    }
     
 }
 
@@ -701,17 +711,21 @@ thead td{
     }
     .mobile-menu {
         display: none;
+        cursor: pointer;
         width: 100%;
         height: 100%;
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
-        left: 50%;
-        padding: 2%;
+        left: 65%;
+        padding: 0%;
         background-color: #fff;
-        z-index: 1;
+        z-index: 3;
         border: 1px solid #d5dcec;
+    }
+    .mobile-menu ul>li {
+        padding: 2%;
     }
     .mobile-menu-cta:hover .mobile-menu{
         display: block;
