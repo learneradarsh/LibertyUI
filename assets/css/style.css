@@ -55,8 +55,11 @@ li,a,button{
 }
 
 p{
-    /* overflow-wrap:break-word; */
     text-overflow: ellipsis;
+
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 section{
@@ -140,6 +143,13 @@ thead td{
 }
 .font-w-600{
     font-weight: 600;
+}
+.message{
+    text-overflow: ellipsis;
+
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
 }
 /*---------------------------
 *Main Wrapper
