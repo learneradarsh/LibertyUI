@@ -55,7 +55,8 @@ li,a,button{
 }
 
 p{
-    overflow-wrap:break-word;
+    /* overflow-wrap:break-word; */
+    text-overflow: ellipsis;
 }
 
 section{
